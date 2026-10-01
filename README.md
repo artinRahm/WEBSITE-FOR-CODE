@@ -2,7 +2,3 @@
 todo: readme
 
 
-Hi :)
-
-
-Sharkbage
