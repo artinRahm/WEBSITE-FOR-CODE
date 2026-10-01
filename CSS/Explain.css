@@ -1,3 +1,10 @@
+/* Text based and Body*/
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 40px 20px;
@@ -19,6 +26,14 @@ p {
     color: #625c54;
 }
 
+
+
+
+
+
+
+
+/* Images & Anmation*/
 img {
     display: block;
     width: 100%;
