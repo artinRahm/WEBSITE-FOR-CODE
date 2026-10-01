@@ -1,5 +1,8 @@
 /* Body And Text based Code */
 
+
+
+
 body {
     margin: 0;
     padding: 50px 20px;
@@ -56,6 +59,7 @@ p {
 
 
 
+
 /* Images */
 .img1{
     width: 800px;
@@ -90,6 +94,9 @@ p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
+
+
+
 /* Hover effect */
 .image-row img {
     transition: transform 0.25s ease;
@@ -120,6 +127,9 @@ p {
         max-width: 300px;
     }
 }
+
+
+
 
 /* Animations */
 .slide-top {
