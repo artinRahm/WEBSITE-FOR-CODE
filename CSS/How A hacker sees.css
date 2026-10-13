@@ -206,3 +206,37 @@ p {
         opacity: 1;
     }
 }
+
+.page-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #8b4a32;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.page-button:hover {
+    background: #6f3a27;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.page-button:active {
+    background: #5a2e1e;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.page-button:focus {
+    outline: 3px solid rgba(139, 74, 50, 0.5);
+    outline-offset: 2px;
+    background: #6f3a27;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,180 @@
+/* Responsible User Page Styles */
+/* Complements Index.css with specific styling for responsible user content */
+
+/* Layout Containers */
+.practice-row, .example-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.practice-card, .example-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practice-card:hover, .example-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+.practice-img, .example-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.practice-card h3, .example-card h3 {
+    color: #8b4a32;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.practice-card p, .example-card p {
+    color: #625c54;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.example-caption {
+    color: #3f3a34;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Navigation Styles */
+.navigation {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(139, 74, 50, 0.05);
+    border-radius: 12px;
+}
+
+.navigation h2 {
+    margin: 10px 0;
+}
+
+.page-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #8b4a32;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.page-button:hover {
+    background: #6f3a27;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.page-button:active {
+    background: #5a2e1e;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.page-button:focus {
+    outline: 3px solid rgba(139, 74, 50, 0.5);
+    outline-offset: 2px;
+    background: #6f3a27;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations - extending existing ones */
+.practice-card, .example-card {
+    animation: slide-in-bck-center 0.7s ease both;
+}
+
+/* Staggered animations for cards */
+.practice-card:nth-child(1), .example-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.practice-card:nth-child(2), .example-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.practice-card:nth-child(3), .example-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.practice-card:nth-child(4), .example-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.practice-card:nth-child(5), .example-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.practice-card:nth-child(6), .example-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .practice-row, .example-row {
+        justify-content: center;
+    }
+    
+    .practice-card, .example-card {
+        width: 80%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .practice-row, .example-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .practice-card, .example-card {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .navigation h2 {
+        font-size: 1.1rem;
+    }
+    
+    .page-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Color Scheme Variations */
+.practice-card:nth-child(odd) {
+    border-left: 4px solid #8b4a32;
+}
+
+.practice-card:nth-child(even) {
+    border-left: 4px solid #625c54;
+}
+
+.example-card {
+    border: 2px solid #eee;
+}
+
+.example-card:hover {
+    border-color: #8b4a32;
+}
