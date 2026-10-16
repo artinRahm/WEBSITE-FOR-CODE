@@ -1,5 +1,5 @@
-/* Responsible User Page Styles */
-/* Complements Index.css with specific styling for responsible user content */
+
+
 
 /* Layout Containers */
 .practice-row, .example-row {
@@ -36,7 +36,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Text Styling */
+/* Text look */
 .practice-card h3, .example-card h3 {
     color: #8b4a32;
     margin-bottom: 12px;
@@ -57,7 +57,7 @@
     margin-top: 10px;
 }
 
-/* Navigation Styles */
+/* navigation look */
 .navigation {
     text-align: center;
     margin: 40px 0;
@@ -104,12 +104,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Animations - extending existing ones */
+/* Animations - extending alrdy made  ones */
 .practice-card, .example-card {
     animation: slide-in-bck-center 0.7s ease both;
 }
 
-/* Staggered animations for cards */
+/*  animations for cards */
 .practice-card:nth-child(1), .example-card:nth-child(1) {
     animation-delay: 0.1s;
 }
@@ -129,7 +129,7 @@
     animation-delay: 0.6s;
 }
 
-/* Responsive Design */
+/* Fixes on a Row Area */
 @media (max-width: 900px) {
     .practice-row, .example-row {
         justify-content: center;
@@ -162,7 +162,7 @@
     }
 }
 
-/* Color Scheme Variations */
+/* Color  Variations */
 .practice-card:nth-child(odd) {
     border-left: 4px solid #8b4a32;
 }
